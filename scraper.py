@@ -30,8 +30,9 @@ def collect_leads():
             name = name_tag.text.strip() if name_tag else "N/A"
             
             # Extract Website
+            # Title format is "BUSINESS NAME - Business Website"
             website = "N/A"
-            web_tag = listing.find("a", {"title": "Website"})
+            web_tag = listing.find("a", title=lambda t: t and "Business Website" in t)
             if web_tag and web_tag.has_attr("href"):
                 href = web_tag["href"]
                 if "redirect=" in href:
