@@ -10,7 +10,9 @@ __pycache__/
 
 # Generated Excel output files
 !Output_Leads_Sample.xlsx
+!Output_Leads_Sample1.xlsx
 leads_*.xlsx
+
 
 # Scheduler log
 scheduler.log
