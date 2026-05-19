@@ -117,23 +117,6 @@ the following columns:
 
 ---
 
-## My Approach — Internship Submission
-
-I built this project to demonstrate practical skills in web scraping,
-data processing, and automation using Python. The scraper uses `requests`
-to fetch publicly available business listings and `BeautifulSoup` to parse
-the HTML and extract structured fields like name, address, category, and
-website. Since contact emails are rarely exposed in directories, I wrote a
-regex-based `generate_email()` function that strips the domain from a website
-URL and produces common guesses such as `contact@domain.com` or
-`info@domain.com`. The enriched data is deduplicated with `pandas` and
-exported to a clean, auto-formatted Excel file using `openpyxl`. Finally, I
-integrated the `schedule` library to allow the entire pipeline to run
-automatically every day at 08:00, making the tool production-ready for
-real-world lead generation workflows.
-
----
-
 ## Notes
 
 - The `ModuleNotFoundError: No module named 'bs4'` error means you are using
